@@ -30,7 +30,7 @@ def git_push():
         origin.push()
         print('pushed changes')
     except:
-        print('Couldn\'t upload to git')
+        print('Couldn't upload to git')
 """
 
     
@@ -43,11 +43,9 @@ while True:
     accelX, accelY, accelZ = sensor.acceleration
 
     if accelX > threshold:
-        #PAUSE
-
     
         #TAKE/SAVE/UPLOAD A PICTURE 
-        name = "n"     #Last Name, First Initial  ex. FoxJ
+        name = "MathewM"     #Last Name, First Initial  ex. FoxJ
         
         if name:
             t = time.strftime("_%H%M%S")      # current time string
