@@ -1,5 +1,4 @@
-#AUTHOR:
-#DATE:
+#AUTHOR: MERYL MATHEW
 
 #import libraries
 import time
