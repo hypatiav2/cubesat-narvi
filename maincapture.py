@@ -1,13 +1,11 @@
-#complete CAPITALIZED sections
-
-#AUTHOR: 
+#AUTHOR:
 #DATE:
 
 #import libraries
 import time
 import os
-import board
 import busio
+import board
 import adafruit_bno055
 #from git import Repo
 from picamera import PiCamera
@@ -18,11 +16,11 @@ sensor = adafruit_bno055.BNO055_I2C(i2c)
 camera = PiCamera()
 
 """
-#bonus: function for uploading image to Github
+# function for uploading image to Github
 def git_push():
     try:
-        repo = Repo('/home/pi/FlatSatChallenge') #PATH TO YOUR GITHUB REPO
-        repo.git.add('folder path') #PATH TO YOUR IMAGES FOLDER WITHIN YOUR GITHUB REPO
+        repo = Repo('/home/pi/FlatSatChallenge')
+        repo.git.add('folder path')
         repo.index.commit('New Photo')
         print('made the commit')
         origin = repo.remote('origin')
@@ -30,25 +28,27 @@ def git_push():
         origin.push()
         print('pushed changes')
     except:
-        print('Couldn't upload to git')
+        print('Couldn\'t upload to git')
 """
 
-    
+
 #SET THRESHOLD
-threshold = 0
-
-
+threshold = 0.2
+repeat = "y"
 #read acceleration
-while True:
+while repeat == "y" or repeat == "yes" or repeat == "Y":
+    print(".")
     accelX, accelY, accelZ = sensor.acceleration
 
     if accelX > threshold:
-    
-        #TAKE/SAVE/UPLOAD A PICTURE 
-        name = "MathewM"     #Last Name, First Initial  ex. FoxJ
-        
+        print("Motion detected")
+        time.sleep(3)
+
+        name = "narvi"     #Last Name, First Initial  ex. FoxJ
+
         if name:
             t = time.strftime("_%H%M%S")      # current time string
-            imgname = ('/home/pi/FlatSatChallenge/Images/YOURFOLDER/%s%s' % (name,t)) #change directory to your folder
-    
-            #<YOUR CODE GOES HERE>#
+            imgname = ('/home/pi/Desktop/cubesat-narvi/%s%s.jpg' % (name,t)) #change directory to your folder
+
+            camera.capture(imgname)
+        repeat = input("Done, try again? (y/n)")
