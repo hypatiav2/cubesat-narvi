@@ -15,7 +15,7 @@ sensor = adafruit_bno055.BNO055_I2C(i2c)
 camera = PiCamera()
 
 """
-# function for uploading image to Github
+# function for uploading image to Github <- use at groundstation
 def git_push():
     try:
         repo = Repo('/home/pi/FlatSatChallenge')
@@ -35,19 +35,17 @@ def git_push():
 threshold = 1
 repeat = "y"
 #read acceleration
-while repeat == "y" or repeat == "yes" or repeat == "Y":
+count = 0
+while count<=10:
     print(".")
     accelX, accelY, accelZ = sensor.acceleration
 
     if accelX > threshold:
         print("Motion detected")
-        time.sleep(3)
-
         name = "narvi"     #Last Name, First Initial  ex. FoxJ
-
         if name:
             t = time.strftime("_%H%M%S")      # current time string
             imgname = ('/home/pi/Desktop/cubesat-narvi/%s%s.jpg' % (name,t)) #change directory to your folder
-
             camera.capture(imgname)
-        repeat = input("Done, try again? (y/n)")
+        time.sleep(3)
+        count+=1
