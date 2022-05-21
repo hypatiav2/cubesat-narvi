@@ -32,7 +32,7 @@ def git_push():
 
 
 #SET THRESHOLD
-threshold = 0.2
+threshold = 1
 repeat = "y"
 #read acceleration
 while repeat == "y" or repeat == "yes" or repeat == "Y":
