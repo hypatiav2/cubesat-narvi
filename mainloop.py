@@ -6,19 +6,6 @@ from git import Repo
 import time
 import os
 
-"""
-import busio
-import board
-import adafruit_bno055
-#from git import Repo
-from picamera import PiCamera
-#setup imu and camera
-i2c = busio.I2C(board.SCL, board.SDA)
-sensor = adafruit_bno055.BNO055_I2C(i2c)
-camera = PiCamera()
-"""
-
-
 def detectObject(imgpath):
     detected = False
 
@@ -59,13 +46,7 @@ def git_push(imgpath):
     except:
         print("Couldn't upload to GitHub")
 
-''''accelX, accelY, accelZ = sensor.acceleration
-if accelX > 1:
-    print("Taking picture")
-    name = "narvi"
-    t = time.strftime("_%H%M%S")      # current time string
-    imgname = ('/home/pi/Desktop/cubesat-narvi/%s%s.jpg' % (name,t)) #change directory to your folder
-    camera.capture(imgname)'''
+
 for filename in os.scandir(r"C:/Users/meryl/OneDrive\Desktop/cubesat-narvi/"):
     if filename.is_file() and "narvi_" in filename.path :
         imgname = filename.path
