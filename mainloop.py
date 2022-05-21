@@ -35,7 +35,7 @@ def detectObject(imgpath):
 # function for uploading image to Github
 def git_push(imgpath):
     try:
-        repo = Repo(r"\Desktop/cubesat-narvi/")
+        repo = Repo(r"C:\Users\meryl\OneDrive\Desktop\cubesat-narvi")
         repo.git.add(imgpath)
         repo.index.commit('New Photo')
         print('made the commit')
@@ -47,7 +47,7 @@ def git_push(imgpath):
         print("Couldn't upload to GitHub")
 
 
-for filename in os.scandir(r"\Desktop/cubesat-narvi/"):
+for filename in os.scandir(r"C:\Users\meryl\OneDrive\Desktop\cubesat-narvi"):
     if filename.is_file() and "narvi_" in filename.path :
         imgname = filename.path
         if detectObject(imgname) == True:
