@@ -38,14 +38,11 @@ repeat = "y"
 count = 0
 while count<=10:
     print(".")
-    accelX, accelY, accelZ = sensor.acceleration
-
-    if accelX > threshold:
-        print("Motion detected")
-        name = "narvi"     #Last Name, First Initial  ex. FoxJ
-        if name:
-            t = time.strftime("_%H%M%S")      # current time string
-            imgname = ('/home/pi/Desktop/cubesat-narvi/%s%s.jpg' % (name,t)) #change directory to your folder
-            camera.capture(imgname)
-        time.sleep(3)
-        count+=1
+    print("Motion detected")
+    name = "narvi"     #Last Name, First Initial  ex. FoxJ
+    if name:
+        t = time.strftime("_%H%M%S")      # current time string
+        imgname = ('/home/pi/Desktop/cubesat-narvi/%s%s.jpg' % (name,t)) #change directory to your folder
+        camera.capture(imgname)
+    time.sleep(3)
+    count+=1
