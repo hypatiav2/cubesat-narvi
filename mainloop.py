@@ -35,14 +35,13 @@ def detectObject(imgpath):
 # function for uploading image to Github
 def git_push(imgpath):
     try:
+        global origin
         repo = Repo(r"C:\Users\meryl\OneDrive\Desktop\cubesat-narvi")
         repo.git.add(imgpath)
         repo.index.commit('New Photo')
         print('made the commit')
         origin = repo.remote('origin')
         print('added remote')
-        origin.push()
-        print('pushed changes')
     except:
         print("Couldn't upload to GitHub")
 
@@ -55,3 +54,9 @@ for filename in os.scandir(r"C:\Users\meryl\OneDrive\Desktop\cubesat-narvi"):
             git_push(imgname)
         else:
             print("No plastics detected.")
+
+try:
+    origin.push()
+    print('pushed changes')
+except: 
+    print("Couldn't push images")
