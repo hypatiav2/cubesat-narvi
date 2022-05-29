@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-image = cv2.imread('5.jpg')
+image = cv2.imread('blur.jpg')
 original = image.copy()
 
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
