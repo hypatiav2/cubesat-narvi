@@ -11,8 +11,8 @@ as well as pictures from our test demo using everyday plastics at home.
 - Award: Best Overall Presentation
 
 ## Challenge Materials
-- [Design Review Presentation] (https://docs.google.com/presentation/d/1-VkZVkaJapbH8x2QFXUjJGAdzKCbqDXV68sjaDp1dPQ/edit?usp=sharing)
-- [Final Project Presentation] (https://docs.google.com/presentation/d/1QwET54YE8lvtQUq55Y8uikWgzIASpIw4OvfZEroFX04/edit?usp=sharing)
+- [Design Review Presentation](https://docs.google.com/presentation/d/1-VkZVkaJapbH8x2QFXUjJGAdzKCbqDXV68sjaDp1dPQ/edit?usp=sharing)
+- [Final Project Presentation](https://docs.google.com/presentation/d/1QwET54YE8lvtQUq55Y8uikWgzIASpIw4OvfZEroFX04/edit?usp=sharing)
 
 Our cubesat:
 ![Picture of our final cubesat prototype](cubesat_picture.jpg?raw=true "Our cubesat!")
