@@ -17,9 +17,9 @@ as well as pictures from our test demo using everyday plastics at home.
 ### Our cubesat:
 <img src="cubesat_picture.jpg" width="600" padding="10px"/>
 
-### Image Detection Process
+### Plastic Detection Process
 grayscale -> blur -> thresholding -> outlines -> bounding box (if rgb different from 'ocean' background)
-<img src="image_detection_process.jpg" width="600" padding="10px"/>
+<img src="detection_process_slide.jpg" width="600" padding="10px"/>
 
 
 
