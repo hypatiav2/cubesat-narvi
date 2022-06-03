@@ -7,14 +7,14 @@ This year's CubeSat mission objective was to design and build a prototype of a C
 We built our CubeSat using a Raspberry Pi 4 Model B, the Adafruit BNO055 Imu, PiCam, and standardized BWSI acrylic panels. In this repository is the code for our CubeSat mission, from launch to finish, 
 as well as pictures from our test demo using everyday plastics at home. 
 
-- Team Narvi, American High School from CA
-- Award: Best Overall Presentation
+### - Team Narvi, American High School from CA
+### - Award: Best Overall Presentation
 
 ## Challenge Materials
 - [Design Review Presentation](https://docs.google.com/presentation/d/1-VkZVkaJapbH8x2QFXUjJGAdzKCbqDXV68sjaDp1dPQ/edit?usp=sharing)
 - [Final Project Presentation](https://docs.google.com/presentation/d/1QwET54YE8lvtQUq55Y8uikWgzIASpIw4OvfZEroFX04/edit?usp=sharing)
 
-Our cubesat:
+### Our cubesat:
 ![Picture of our final cubesat prototype](cubesat_picture.jpg?raw=true "Our cubesat!")
 
 
