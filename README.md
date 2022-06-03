@@ -15,6 +15,6 @@ as well as pictures from our test demo using everyday plastics at home.
 - [Final Project Presentation](https://docs.google.com/presentation/d/1QwET54YE8lvtQUq55Y8uikWgzIASpIw4OvfZEroFX04/edit?usp=sharing)
 
 ### Our cubesat:
-<img src="cubesat_picture.jpg" width="400"/>
+<img src="cubesat_picture.jpg" width="600"/>
 
 
