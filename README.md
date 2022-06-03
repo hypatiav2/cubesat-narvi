@@ -9,3 +9,5 @@ as well as pictures from our test demo using everyday plastics at home.
 
 - Team Narvi, American High School from CA
 - Award: Best Overall Presentation
+
+![Picture of our final cubesat prototype](blob/main/cubesat_picture.jpg?raw=true "Our cubesat!")
